@@ -1,5 +1,11 @@
 $(document).ready(function () {
-    console.log('hello querry');
+
+    $('#location').click(function () {
+        $('#locationModal').modal('toggle')
+    })
+    $('#sd-location').click(function () {
+        $('#locationModal').modal('toggle')
+    })
     
     // header slider 
     $('.offers').slick({

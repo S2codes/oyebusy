@@ -24,19 +24,14 @@
                     <a class="navbar-brand" href="/">
                         <img src="assets/imgs/logo.svg" alt="Ouebusy" class="logo">
                     </a>
-                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> -->
 
-                    <i class="bi bi-geo-alt navbar-toggler"></i>
+                    <i class="bi bi-geo-alt navbar-toggler " id="sd-location"></i>
 
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                         <p id="location" class="p-0 m-0"> <i class="bi bi-geo-alt"></i> 1st Floor, H 356, Block B,
-                            Sector 22, Noida, Uttar Pradesh 201301</p>
+                            Sector 22, Noida, Uttar Pradesh 201301 <i class="bi bi-chevron-down"></i></p>
 
 
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -936,6 +931,7 @@
 
     </footer>
 
+    <!-- responsive Navabr  -->
     <div class="sd-nav py-2 ">
         <ul class="list-unstyled m-0 p-0">
             <li class="px-2 ">
@@ -964,6 +960,32 @@
             </li>
 
         </ul>
+    </div>
+
+    <!-- location modal  -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Add New Address</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <input type="text" name="name" class="form-control mb-3" placeholder="Name">
+                        <input type="tel" name="contact" class="form-control mb-3" placeholder="Contact">
+                        <input type="text" name="area" class="form-control mb-3" placeholder="Area">
+                        <textarea name="address" cols="30" rows="2" class="form-control mb-3"
+                            placeholder="Address"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
