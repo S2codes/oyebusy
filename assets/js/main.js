@@ -26,11 +26,12 @@ $(document).ready(function () {
         prevArrow:"<i class='bi bi-arrow-left-circle trend-arrow-pre'></i>",
         nextArrow: "<i class='bi bi-arrow-right-circle trend-arrow-next'></i>"
     })
+
     $('#trnd-service-2').slick({
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
-        speed: 300,
+        speed: 350,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
@@ -41,7 +42,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
-        speed: 300,
+        speed: 400,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
@@ -52,3 +53,4 @@ $(document).ready(function () {
 
 
 })
+
